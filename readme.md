@@ -7,14 +7,18 @@
 git clone https://github.com/sskcal/ng-small_proground_taro.git
 
 克隆到本地后
+```shell
 yarn
 
 yarn dev:weapp
+```
 
 或
+```shell
 npm install
 
 npm run dev:weapp
+```
 
 提示编译成功后，打开微信开发者工具打开此项目后即可以查看.
 如果无法看到内容，可以点击开发者工具右上角->详情->本地设置->钩上不校验合法域名。
