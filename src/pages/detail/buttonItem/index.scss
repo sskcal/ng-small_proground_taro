@@ -1,0 +1,44 @@
+@import '@styles/theme.scss';
+
+.comp-button {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  
+  height: 94px;
+  border: 0;
+  border-radius: 0;
+  background: #ffffff;
+
+  &--primary {
+    background: $primary-color;
+  }
+
+  &--plain {
+    border: 1px solid $primary-color;
+    /* TODO background: transparent 的编译有问题 */
+    background-color: transparent;
+  }
+
+  &--disabled {
+    background: $disabled-color;
+  }
+}
+
+.comp-button__txt {
+  color: $text-color;
+  font-size: 28px;
+
+  &--primary {
+    color: #ffffff;
+  }
+
+  &--plain {
+    color: $primary-color;
+  }
+
+  &--disabled {
+    color: #ffffff;
+  }
+}

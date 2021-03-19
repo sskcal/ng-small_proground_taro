@@ -1,0 +1,131 @@
+@import "@styles/theme.scss";
+page{
+    background: #f9f9f9
+}
+
+
+.buy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .buy-form{
+        form{
+            width: 730px;
+        }
+    }
+    .discount-code{
+        font-size: 24px;
+        color: orange;
+        line-height: 60px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+        margin-right: 40px;
+    }
+    .buy_item{
+        display: flex;
+        margin-top: 20px;
+        height: 300px;
+        width: 730px;
+        border-radius:30px;
+        background-color: white;
+        &_left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 220px;
+            height: 300px;
+            image{
+                margin-top: 50px;
+                border-radius: 5px;
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &_right{
+            display: flex;
+            flex-direction: column;
+            width: 510px;
+            height: 300px;
+            &_title{
+                margin-top: 15px;
+                color: $text-color;
+                padding: 10px 10px;
+                width: 510px;
+                font-size: 32px;
+                line-height: 40px;
+                overflow: hidden;
+                @include text-ellipsis;
+            }
+            &_spe{
+                color: $text-color;
+                padding: 10px 10px;
+                width: 510px;
+                font-size: 28px;
+                line-height: 40px;
+                overflow: hidden;
+                @include text-ellipsis;
+            }
+            &_price{
+                color: $text-color;
+                padding: 10px 10px;
+                width: 510px;
+                font-size: 28px;
+                line-height: 40px;
+                overflow: hidden;
+                @include text-ellipsis;
+            }
+            &_buy-quantity{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                margin-top: 20px;
+                margin-right: 20px;
+            }
+        }
+    }
+    .buy_item-last-child{
+        margin-bottom: 130px;
+    }
+}
+    
+
+
+
+.buy_footer{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    &_left{
+        display: flex;
+        flex: 1;
+        line-height: 100px;
+        &_await-pay{
+            margin-left: 50px;
+        }
+        &_pay-amount-money{
+            color: red;
+        }
+        &_pay-amount-money::first-letter{
+            font-size: 24px;
+        }
+    }
+    &_right{
+        display: flex;
+        width: 280px;
+        flex-direction: row;
+        align-items: center;
+        &_button{
+            height: 60px;
+            line-height: 60px;
+            background-color: #FF0033;
+            background-image: linear-gradient(#FF0033, #FF0066);
+            border: tomato;
+        }
+    }
+}

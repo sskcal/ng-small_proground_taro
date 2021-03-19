@@ -1,0 +1,95 @@
+@import "@styles/theme.scss";
+.home-recommend {
+    margin-top: 0px;
+    background: #ffffff;
+  }
+  
+  .home-recommend__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  
+    &-txt {
+      color: $black;
+      font-size: 28px;
+      line-height: 28px;
+      font-weight: bold;
+    }
+  }
+  
+  .home-recommend__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 15px;
+  
+    &-item {
+      display: flex;
+      flex-direction: column;
+      padding: 0 15px 40px;
+      width: 45%;
+  
+      &-desc {
+        padding: 0 10px;
+        width: 100%;
+        line-height: 70px;
+        color: #9e8962;
+        font-size: 24px;
+        background: #f0ebe2;
+        overflow: hidden;
+        @include text-ellipsis;
+      }
+  
+      &-img {
+        width: 330px;
+        height: 330px;
+        background: #f4f4f4;
+        border-radius: 4px;
+      }
+  
+      &-info {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+  
+      &-name {
+        color: $text-color;
+        padding: 10px 10px;
+        width: 310px;
+        font-size: 28px;
+        line-height: 40px;
+        overflow: hidden;
+        @include text-ellipsis;
+      }
+  
+      &-price-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+  
+      &-price {
+        color: $primary-color;
+        font-size: 32px;
+        line-height: 48px;
+      }
+  
+      &-price--origin {
+        margin-left: 14px;
+        color: $text-color-lighter;
+        font-size: 30px;
+        font-weight: 200;
+        line-height: 48px;
+        text-decoration: line-through;
+        text-decoration-color: $text-color-lighter;
+      }
+  
+      
+    }
+  }
+  
+

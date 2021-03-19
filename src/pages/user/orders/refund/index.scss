@@ -1,0 +1,120 @@
+// @import "@styles/theme.scss";
+page{
+    background-color: #f9f9f9;
+    font-size: 28px;
+  }
+  text{
+    color: gray;
+  }
+  .title{
+    line-height: 70px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #795548;
+    margin-top: 30px;
+  }
+  .body{
+    height: 100vh;
+    // width: 690px;
+    margin: 20px;
+    padding: 0px 10px;
+    background: #fff;
+    .buy_list{
+        
+        .buy_item{
+            display: flex;
+            margin: 30px 0px;
+            border-bottom: solid 1px #f9f9f9;
+            .buy_item_left{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 300px;
+                height: 300px;
+                image{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 10px;
+                }
+            }
+            .buy_item_right{
+                display: flex;
+                flex-direction: column;
+                width: 390px;
+                height: 300px;
+                text{
+                    height: 56px;
+                    line-height: 56px;
+                    overflow: hidden;
+                }
+                .buy_item_right_buy-quantity{
+                    height: 56px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+    }
+    .buy_reason{
+        margin-bottom: 138px;
+    }
+    .buy_footer{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        bottom: 0px;
+        height: 100px;
+        width: 100%;
+        background-color: white;
+        .left{
+            margin-left: 20px;
+            display: flex;
+            flex: 1;
+            line-height: 100px;
+            .await-pay{
+                margin: 0px;
+            }
+            .amount-money{
+                color: red;
+                margin: 0px;
+            }
+            .amount-money::first-letter{
+                font-size: 24px;
+            }
+        }
+        .right{
+            display: flex;
+            width: 330px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            button{
+                color:white;
+                margin: 0 30px;
+                height: 60px;
+                line-height: 60px;
+                background-color: #FF0033;
+                background-image: linear-gradient(#FF0033, #FF0066);
+                border: tomato;
+            }
+        }
+    }
+  }
+
+  .at-tag--primary{
+    border-color: #78A4F4;
+    background-color: #FFF;
+  }
+  
+.at-tag--active.at-tag--primary{
+    border-color: #78A4F4;
+    background-color: #FFF;
+    background-image: url('./item/assets/right.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50px;
+}

@@ -1,0 +1,90 @@
+
+
+.orders{
+    width: 730px;
+    margin: 0px auto;
+    background-color: #f9f9f9;
+    padding: 10px 0 10px 0px;
+    .order-item{
+        background-color: #fff;
+        margin: 20px;
+        .header{
+            font-size: 28px;
+            line-height: 60px;
+            margin-left: 10px;
+            Text{
+                color: gray;
+            }
+        }
+        .body{
+            display: flex;
+            margin: 20px 0;
+            .img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 210px;
+                height: 210px;
+                image{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 20px;
+                }
+            }
+            .conetent{
+                color:#607d8b;
+                .title{
+                    width: 470px;
+                    font-size: 26px;
+                    line-height: 58px;
+                    overflow: hidden;
+                }
+                .discount{
+                    font-size: 24px;
+                    line-height: 48px;
+                }
+            }
+        }
+
+        .bottom{
+            display: flex;
+            line-height: 68px;
+            margin: 0px 20px;
+            justify-content: space-between;
+            .total{
+                display: flex;
+                width: 180px;
+                .totalStr{
+                    color: gray;
+                    font-size: 26px;
+                }
+                .totalFee{
+                    color: rgb(188, 8, 8);
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+            }
+            .btn{
+                width: 390px;
+                display: flex;
+                justify-content: flex-end;
+                button{
+                    margin: 0 10px;
+                    height: 60px;
+                    padding: 0px 4px;
+                    line-height: 60px;
+                    width: 120px;
+                    background: tomato;
+                    font-size: 24px;
+                    color: white;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    .order-end{
+        text-align: center;
+        font-size: 24px;
+        color: #795548;
+    }
+}

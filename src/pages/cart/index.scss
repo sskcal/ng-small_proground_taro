@@ -1,0 +1,152 @@
+@import "@styles/theme.scss";
+page{
+    background: #f9f9f9
+}
+.no-data{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 700px;
+    height: 500px;
+    image{
+        width: 400px;
+        height: 400px;
+    }
+    text{
+        color:#755548;
+        margin: 10px 0;
+    }
+    button{
+        margin: 0px 0px;
+        padding: 0px;
+        width: 220px;
+        line-height: 60px;
+        height: 60px;
+        background: tomato;
+        color: white;
+        font-size: 24px;
+        letter-spacing: 10px;
+    }
+}
+
+
+
+
+.buy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .buy_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+        .buy_item{
+            display: flex;
+            margin-top: 20px;
+            height: 300px;
+            width: 730px;
+            border-radius:30px;
+            background-color: white;
+            &_left{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 220px;
+                height: 300px;
+                image{
+                    margin-top: 50px;
+                    border-radius: 5px;
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            &_right{
+                display: flex;
+                flex-direction: column;
+                width: 510px;
+                height: 300px;
+                &_title{
+                    margin-top: 15px;
+                    color: $text-color;
+                    padding: 5px 10px;
+                    width: 510px;
+                    font-size: 32px;
+                    line-height: 40px;
+                    overflow: hidden;
+                    @include text-ellipsis;
+                }
+                &_spe{
+                    color: $text-color;
+                    padding: 5px 10px;
+                    width: 510px;
+                    font-size: 28px;
+                    line-height: 40px;
+                    overflow: hidden;
+                    @include text-ellipsis;
+                }
+                &_price{
+                    color: $text-color;
+                    padding: 10px 10px;
+                    width: 510px;
+                    font-size: 28px;
+                    line-height: 40px;
+                    overflow: hidden;
+                    @include text-ellipsis;
+                }
+                &_buy-quantity{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    
+    }
+    .buy_item-last-child{
+        margin-bottom: 130px;
+    }
+}
+
+.buy_footer{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    .left{
+        margin-left: 20px;
+        display: flex;
+        flex: 1;
+        line-height: 100px;
+        .await-pay{
+            margin: 0px;
+        }
+        .amount-money{
+            color: red;
+            margin: 0px;
+        }
+        .amount-money::first-letter{
+            font-size: 24px;
+        }
+    }
+    .right{
+        display: flex;
+        width: 280px;
+        flex-direction: row;
+        align-items: center;
+        .button{
+            height: 60px;
+            line-height: 60px;
+            background-color: #FF0033;
+            background-image: linear-gradient(#FF0033, #FF0066);
+            border: tomato;
+        }
+    }
+}

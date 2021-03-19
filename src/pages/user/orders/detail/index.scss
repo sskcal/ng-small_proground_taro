@@ -1,0 +1,97 @@
+page{
+    background-color: #f9f9f9;
+    font-size: 28px;
+}
+text{
+    color: gray;
+}
+.orders-menu-title{
+    line-height: 70px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #795548;
+    margin-top: 30px;
+}
+.body{
+    height: 100vh;
+    margin: 30px;
+    padding: 0px 20px;
+    background: #fff;
+    .product{
+        margin-bottom: 120px;
+        .price-body{
+            display: flex;
+            margin: 20px 0;
+            .img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 230px;
+                height: 210px;
+                image{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 20px;
+                }
+            }
+            .conetent{
+                color: #607d8b;
+                .title{
+                    width: 400px;
+                    font-size: 26px;
+                    line-height: 58px;
+                    
+                    overflow: hidden;
+                }
+                .discount{
+                    font-size: 24px;
+                    line-height: 48px;
+                    .deliver-status{
+                        color: tomato;
+                    }
+                }
+            }
+        }
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        position:fixed;
+        background-color: white;
+        left: 0px;
+        bottom: 0px;
+        height: 120px;
+        line-height: 120px;
+        width: 100%;
+        .total{
+            margin: 0px 30px;
+            display: flex;
+            flex-direction: row;
+            .totalStr{
+                color: gray;
+                font-size: 36px;
+            }
+            .totalFee{
+                color: rgb(188, 8, 8);
+                font-size: 32px;
+            }
+        }
+        .btn{
+            margin: 0px 30px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            
+        }
+    }
+}
+
+
+.pay-button{
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 32px;
+    background: tomato;
+    color: white;
+}

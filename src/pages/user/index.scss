@@ -1,0 +1,92 @@
+@import "@styles/theme.scss";
+
+.body{
+    font-size: 24px;
+    .avatar-bg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 420px;
+        background: url(./assets/bg.png) repeat center center;
+        filter: blur(30px);
+    
+    }
+    .avatar-url{
+        position:absolute;
+        width:400px;
+        height: 400px;
+        top:30px;
+        left: 50%;
+        transform: translate(-50%);
+        image{
+            width:300px;
+            height: 300px;
+            border-radius: 30px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        text{
+            display: inline-block;
+            line-height: 48px;
+            width: 300px;
+            text-align: center;
+            overflow: hidden;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    
+    
+    .payment-status{
+        display: flex;
+        justify-content: space-evenly;
+        width: 730px;
+        height: 130px;
+        margin: 10px auto;
+        border-radius: 20px;
+        background-image: linear-gradient(#ECF5FF, #FDFFFF);
+        box-shadow: 2px 2px 5px #c7c7c9;
+        view{
+            display: flex;
+            flex-direction: column;
+            width: 120px;
+            height: 120px;
+            align-items: center;
+            justify-content: center;
+            
+            image{
+                width: 50px;
+                height: 50px;
+            }
+            text{
+                display: flex;
+                color: #030548;
+            }
+        }
+    }
+    
+    .body-list{
+        display: flex;
+        width: 730px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        view{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            image{
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}
+
