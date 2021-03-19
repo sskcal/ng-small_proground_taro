@@ -7,10 +7,12 @@
 git clone https://github.com/sskcal/ng-small_proground_taro.git
 
 克隆到本地后
+yarn
 
 yarn dev:weapp
 
 或
+npm install
 
 npm run dev:weapp
 
